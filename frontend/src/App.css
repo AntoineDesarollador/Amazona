@@ -38,14 +38,6 @@ text-decoration: none;
 font-weight: bold;
 }
 
-header nav ul {
-display: flex;
-list-style: none;
-}
-
-header nav ul li {
-  margin: 0px 5px;
-}
 
 /*! LIST PRODUCTS*/
 

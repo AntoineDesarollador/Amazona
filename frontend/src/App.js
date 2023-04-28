@@ -1,25 +1,25 @@
 
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import data from "./data.js"
+import HomeScreen from "./screens/HomeScreen.js";
+
 
 
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
       <header className="App-header">
     <a href='/'>Amazona</a>
-    <nav>
-      <ul>
-        <li>Products</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
+
       </header>
 
     <main>
-
+    <Routes>
+    <Route   path='/' element={<HomeScreen />}/>
+    </Routes>
       <h1>List products</h1>
 
       
@@ -44,6 +44,7 @@ function App() {
 
       </main>
     </div>
+    </BrowserRouter> 
   );
 }
 
