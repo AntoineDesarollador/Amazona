@@ -28,15 +28,16 @@ function App() {
           data.products.map(product => (
           <div className='products' key={product.slug}>
 
-        <a to href='/'>
+        <a href={`/product/${product.slug}`}>
         <img src={product.image} alt={product.name} />
         </a>
-            <a href='/'>
+            <a href={`/product/${product.slug}`} >
           <p>{product.name}</p>
           </a>
-          <p><strong> {product.price}</strong></p>
+          <p><strong>$ {product.price}</strong></p>
           <button>Add to cart</button>
         </div>))
+
         }
         </div>
       
