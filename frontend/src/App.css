@@ -31,9 +31,9 @@ header{
 header a {
 margin-left: 10px;
 background-color: rgb(241, 178, 18);
-border-radius: 10px;
+border-radius: 5px;
 padding: 10px;
-color: rgb(0, 0, 0);
+color: rgb(17, 17, 17);
 text-decoration: none;
 font-weight: bold;
 }
